@@ -7,8 +7,12 @@
 
 function CSS3D_Perspective(s, fill) {
     s.WebkitPerspective = fill;
-    s.WebkitPerspectiveOrigin = "50% 50%";
     s.MozPerspective = fill;
-    s.MozPerspectiveOrigin = "50% 50%";
+    return s;
+}
+
+function CSS3D_PerspectiveOrigin(s, fill) {
+    s.WebkitPerspectiveOrigin = fill;
+    s.MozPerspectiveOrigin = fill;
     return s;
 }
